@@ -17,6 +17,28 @@ function App() {
   );
 }
 
+function Avatar() {
+  return <img className="avatar" src="sharma-avatar.jpeg" alt="avatar" />;
+}
+
+function Intro() {
+  return (
+    <div>
+      <h1>Sharmake Said</h1>
+      <p>
+        A dedicated student who is passionate about learning computer science.
+        With a keen interest in technology and problem-solving, I'm deeply
+        immersed in the world of programming languages, algorithms, and software
+        development
+      </p>
+    </div>
+  );
+}
+
+function SkillList() {}
+
+function Skill() {}
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
