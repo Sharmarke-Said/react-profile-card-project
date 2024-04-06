@@ -35,9 +35,27 @@ function Intro() {
   );
 }
 
-function SkillList() {}
+function SkillList() {
+  return (
+    <div className="skill-list">
+      <Skill skill="HTML&CSS" emoji="👍" color="orange" />
+      <Skill skill="JavaScript" emoji="👌" color="yellow" />
+      <Skill skill="C" emoji="👍" color="blue" />
+      <Skill skill="Python" emoji="💪" color="green" />
+      <Skill skill="Java" emoji="👍" color="purple" />
+      <Skill skill="MySQL" emoji="👌" color="cyan" />
+    </div>
+  );
+}
 
-function Skill() {}
+function Skill(props) {
+  return (
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill} </span>
+      <span>{props.emoji}</span>
+    </div>
+  );
+}
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
