@@ -1,1 +1,1 @@
-Simple Developer card 
+Simple Profile Developer card 
